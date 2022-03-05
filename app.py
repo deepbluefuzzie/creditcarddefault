@@ -25,7 +25,7 @@ def index():
         pred1 = model1.predict([[income2, age2, loan2]])
         s1 = "The credit card default based on Decision Tree is : " + str(pred1)
         
-        model2 = joblib.load("CCD_Reg")
+        model2 = joblib.load("CCD_REG")
         pred2 = model2.predict([[income2, age2, loan2]])
         s2 = "The credit card default based on Linear Regression Model is : " + str(pred2)
         
